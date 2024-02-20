@@ -1,7 +1,9 @@
 'use client';
 
+import axios from 'axios';
 import { useCallback, useState } from 'react';
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
+import { toast } from 'react-hot-toast';
 import { FaGithub, FaGoogle } from 'react-icons/fa';
 
 import Button from '../../components/Button';
@@ -35,11 +37,15 @@ const AuthForm = () => {
     },
   });
 
-  const onSubmit: SubmitHandler<FieldValues> = () => {
+  const onSubmit: SubmitHandler<FieldValues> = (data) => {
     setIsLoading(true);
 
     if (variant === 'REGISTER') {
-      // axios
+      axios
+        .post('/api/register', data)
+
+        .catch(() => toast.error('Something went wrong!'))
+        .finally(() => setIsLoading(false));
     }
     if (variant === 'LOGIN') {
       // nextAuth
