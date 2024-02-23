@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import Link from 'next/link';
+import { FC } from 'react';
 
 interface DesktopItemProps {
   label: string;
@@ -9,7 +10,7 @@ interface DesktopItemProps {
   active?: boolean;
 }
 
-const DesktopItem: React.FC<DesktopItemProps> = ({ label, href, icon: Icon, active, onClick }) => {
+const DesktopItem: FC<DesktopItemProps> = ({ label, href, icon: Icon, active, onClick }) => {
   const handleClick = () => {
     if (onClick) {
       return onClick();

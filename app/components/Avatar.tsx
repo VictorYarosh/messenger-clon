@@ -29,24 +29,23 @@ const Avatar: FC<AvatarProps> = ({ user }) => {
       >
         <Image fill src={user?.image || '/images/placeholder.jpg'} alt="Avatar" />
       </div>
-      {/*{isActive ? (*/}
-      {/*  <span*/}
-      {/*    className="*/}
-      {/*      absolute*/}
-      {/*      block*/}
-      {/*      rounded-full*/}
-      {/*      bg-green-500*/}
-      {/*      ring-2*/}
-      {/*      ring-white*/}
-      {/*      top-0*/}
-      {/*      right-0*/}
-      {/*      h-2*/}
-      {/*      w-2*/}
-      {/*      md:h-3*/}
-      {/*      md:w-3*/}
-      {/*    "*/}
-      {/*  />*/}
-      {/*) : null}*/}
+
+      <span
+        className="
+            absolute
+            block
+            rounded-full
+            bg-green-500
+            ring-2
+            ring-white
+            top-0
+            right-0
+            h-2
+            w-2
+            md:h-3
+            md:w-3
+          "
+      />
     </div>
   );
 };
