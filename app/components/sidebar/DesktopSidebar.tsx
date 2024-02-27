@@ -7,6 +7,7 @@ import { User } from '@prisma/client';
 import useRoutes from '../../hooks/useRoutes';
 import Avatar from '../Avatar';
 import DesktopItem from './DesktopItem';
+import SettingsModal from './SettingsModal';
 
 interface DesktopSidebarProps {
   currentUser: User;
@@ -18,7 +19,7 @@ const DesktopSidebar: FC<DesktopSidebarProps> = ({ currentUser }) => {
 
   return (
     <>
-      {/*<SettingsModal currentUser={currentUser} isOpen={isOpen} onClose={() => setIsOpen(false)} />*/}
+      <SettingsModal currentUser={currentUser} isOpen={isOpen} onClose={() => setIsOpen(false)} />
       <div
         className="
         hidden

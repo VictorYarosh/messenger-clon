@@ -1,14 +1,16 @@
 'use client';
 
 import Link from 'next/link';
-import { FC, useMemo, useState } from 'react';
+import React, { FC, useMemo, useState } from 'react';
 import { HiChevronLeft } from 'react-icons/hi';
 import { HiEllipsisHorizontal } from 'react-icons/hi2';
 
 import { Conversation, User } from '@prisma/client';
 
 import Avatar from '../../../components/Avatar';
+import AvatarGroup from '../../../components/AvatarGroup';
 import useOtherUser from '../../../hooks/useOtherUser';
+import ProfileDrawer from './ProfileDrawer';
 
 interface HeaderProps {
   conversation: Conversation & {
@@ -32,7 +34,7 @@ const Header: FC<HeaderProps> = ({ conversation }) => {
 
   return (
     <>
-      {/*<ProfileDrawer data={conversation} isOpen={drawerOpen} onClose={() => setDrawerOpen(false)} />*/}
+      <ProfileDrawer data={conversation} isOpen={drawerOpen} onClose={() => setDrawerOpen(false)} />
       <div
         className="
         bg-white
@@ -62,7 +64,7 @@ const Header: FC<HeaderProps> = ({ conversation }) => {
           >
             <HiChevronLeft size={32} />
           </Link>
-          <Avatar user={otherUser} />
+          {conversation.isGroup ? <AvatarGroup users={conversation.users} /> : <Avatar user={otherUser} />}
           <div className="flex flex-col">
             <div>{conversation.name || otherUser.name}</div>
             <div className="text-sm font-light text-neutral-500">{statusText}</div>

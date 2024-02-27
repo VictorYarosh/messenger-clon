@@ -3,33 +3,38 @@
 import { FullConversationType } from 'app/types';
 import clsx from 'clsx';
 import { useRouter } from 'next/navigation';
+import { useSession } from 'next-auth/react';
 import { FC, useState } from 'react';
 import { MdOutlineGroupAdd } from 'react-icons/md';
 
+import { User } from '@prisma/client';
+
+import GroupChatModal from '../../components/modals/GroupChatModal';
 import useConversation from '../../hooks/useConversation';
 import ConversationBox from './ConversationBox';
 
 interface ConversationListProps {
   initialItems: FullConversationType[];
-  // users: User[];
-  // title?: string;
+  users: User[];
+  title?: string;
 }
 
-const ConversationList: FC<ConversationListProps> = ({ initialItems }) => {
+const ConversationList: FC<ConversationListProps> = ({ initialItems, users }) => {
   const [items, setItems] = useState(initialItems);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const router = useRouter();
+  const session = useSession();
+
   const { conversationId, isOpen } = useConversation();
 
-  // useEffect(() => {
-  //   if (!pusherKey) {
-  //     return;
-  //   }
-  // });
+  // const pusherKey = useMemo(() => {
+  //   return session.data?.user?.email;
+  // }, [session.data?.user?.email]);
 
   return (
     <>
-      {/*<GroupChatModal users={users} isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />*/}
+      <GroupChatModal users={users} isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <aside
         className={clsx(
           `
@@ -51,6 +56,7 @@ const ConversationList: FC<ConversationListProps> = ({ initialItems }) => {
           <div className="flex justify-between mb-4 pt-4">
             <div className="text-2xl font-bold text-neutral-800">Messages</div>
             <div
+              onClick={() => setIsModalOpen(true)}
               className="
                 rounded-full
                 p-2
