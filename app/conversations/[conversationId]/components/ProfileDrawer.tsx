@@ -1,7 +1,7 @@
 'use client';
 
 import { format } from 'date-fns';
-import React, { FC, Fragment, useMemo, useState } from 'react';
+import { FC, Fragment, useMemo, useState } from 'react';
 import { IoClose, IoTrash } from 'react-icons/io5';
 
 import { Dialog, Transition } from '@headlessui/react';
@@ -9,6 +9,7 @@ import { Conversation, User } from '@prisma/client';
 
 import Avatar from '../../../components/Avatar';
 import AvatarGroup from '../../../components/AvatarGroup';
+import useActiveList from '../../../hooks/useActiveList';
 import useOtherUser from '../../../hooks/useOtherUser';
 import ConfirmModal from './ConfirmModal';
 
@@ -32,16 +33,16 @@ const ProfileDrawer: FC<ProfileDrawerProps> = ({ isOpen, onClose, data }) => {
     return data.name || otherUser.name;
   }, [data.name, otherUser.name]);
 
-  // const { members } = useActiveList();
-  // const isActive = members.indexOf(otherUser?.email!) !== -1;
-  //
+  const { members } = useActiveList();
+  const isActive = members.indexOf(otherUser?.email!) !== -1;
+
   const statusText = useMemo(() => {
     if (data.isGroup) {
       return `${data.users.length} members`;
     }
 
-    return 'Active';
-  }, [data]);
+    return isActive ? 'Active' : 'Offline';
+  }, [data, isActive]);
 
   return (
     <>
