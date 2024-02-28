@@ -2,10 +2,11 @@
 
 import useActiveChannel from '../hooks/useActiveChannel';
 
+// @ts-ignore
 const ActiveStatus = () => {
   useActiveChannel();
 
-  return <div></div>;
+  return null;
 };
 
 export default ActiveStatus;
