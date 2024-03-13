@@ -25,7 +25,10 @@ const ChatId = async ({ params }: { params: IParams }) => {
 
   return (
     <div className="lg:pl-80 h-full">
-      <div className="h-full flex flex-col">
+      <div
+        className="h-full flex flex-col bg-no-repeat bg-cover"
+        style={{ backgroundImage: 'url(/images/conversation-bg.jpg)' }}
+      >
         <Header conversation={conversation} />
         <Body initialMessages={messages} />
         <Form />

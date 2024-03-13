@@ -5,9 +5,10 @@ import { find } from 'lodash';
 import { FC, useEffect, useRef, useState } from 'react';
 
 import useConversation from '../../../hooks/useConversation';
-import { pusherClient } from '../../../libs/pusher';
-import { FullMessageType } from '../../../types';
 import MessageBox from './MessageBox';
+
+import { pusherClient } from '@/app/libs/pusher';
+import { FullMessageType } from '@/app/types';
 
 interface BodyProps {
   initialMessages: FullMessageType[];

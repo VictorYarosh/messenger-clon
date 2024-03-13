@@ -1,6 +1,5 @@
 'use client';
 
-import { FullConversationType } from 'app/types';
 import clsx from 'clsx';
 import { find } from 'lodash';
 import { useRouter } from 'next/navigation';
@@ -14,6 +13,8 @@ import GroupChatModal from '../../components/modals/GroupChatModal';
 import useConversation from '../../hooks/useConversation';
 import { pusherClient } from '../../libs/pusher';
 import ConversationBox from './ConversationBox';
+
+import { FullConversationType } from '@/app/types';
 
 interface ConversationListProps {
   initialItems: FullConversationType[];

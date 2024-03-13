@@ -7,8 +7,9 @@ import { useSession } from 'next-auth/react';
 import { FC, useState } from 'react';
 
 import Avatar from '../../../components/Avatar';
-import { FullMessageType } from '../../../types';
 import ImageModal from './ImageModal';
+
+import { FullMessageType } from '@/app/types';
 
 interface MessageBoxProps {
   data: FullMessageType;
