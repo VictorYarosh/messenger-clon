@@ -11,7 +11,7 @@ export default async function ConversationsLayout({ children }: { children: Reac
 
   return (
     <Sidebar>
-      <div className="h-full">
+      <div className="h-full bg-gradient-to-r from-cyan-300 to-blue-300">
         <ConversationList users={users} title="Messages" initialItems={conversations} />
         {children}
       </div>
