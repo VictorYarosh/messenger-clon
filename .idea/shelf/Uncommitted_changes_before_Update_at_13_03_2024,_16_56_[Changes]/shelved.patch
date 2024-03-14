@@ -1,0 +1,28 @@
+Index: .env
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># Environment variables declared in this file are automatically made available to Prisma.\n# See the documentation for more detail: https://pris.ly/d/prisma-schema#accessing-environment-variables-from-the-schema\n\n# Prisma supports the native connection string format for PostgreSQL, MySQL, SQLite, SQL Server, MongoDB and CockroachDB.\n# See the documentation for all the connection string options: https://pris.ly/d/connection-strings\n\n\nDATABASE_URL=\"mongodb+srv://victor:victor1@cluster0.xrezq4y.mongodb.net/Cluster0?retryWrites=true&w=majority\"\nNEXTAUTH_SECRET=\"NEXTAUTH_SECRET\"\n\nGITHUB_ID=\"\"\nGITHUB_SECRET=\"\"\n\nGOOGLE_CLIENT_ID=\"\"\nGOOGLE_CLIENT_SECRET=\"\"\n\nNODE_ENV=\"\"\n
+===================================================================
+diff --git a/.env b/.env
+--- a/.env	
++++ b/.env	
+@@ -8,10 +8,14 @@
+ DATABASE_URL="mongodb+srv://victor:victor1@cluster0.xrezq4y.mongodb.net/Cluster0?retryWrites=true&w=majority"
+ NEXTAUTH_SECRET="NEXTAUTH_SECRET"
+ 
+-GITHUB_ID=""
+-GITHUB_SECRET=""
++GITHUB_ID=8a60548aaa60285d3a62
++GITHUB_SECRET=0d1c3ac0e99f7c769110dae4c9887e893391e40f
+ 
+-GOOGLE_CLIENT_ID=""
+-GOOGLE_CLIENT_SECRET=""
++GOOGLE_CLIENT_ID=11030449074-4fucq0aqs6gqfaohmigu849ffqg89c0h.apps.googleusercontent.com
++GOOGLE_CLIENT_SECRET=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
+ 
+-NODE_ENV=""
++NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=dszicea1x
++
++NEXT_PUBLIC_PUSHER_APP_KEY=3951c0504c6111c0b6c8
++PUSHER_APP_ID=1762972
++PUSHER_SECRET=ba4547955133a06b614d

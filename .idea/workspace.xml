@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="20e4f849-9213-40bd-8b44-c23d7e406010" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="false" />
+    <option name="myAllFileTypesSelected" value="true" />
+    <option name="mySelectedFileTypes">
+      <set />
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;VictorYarosh&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="915ffff1-75bd-4c60-aa98-fb31b5d22bd1" />
+        <option name="url" value="git@github.com:VictorYarosh/messenger-clon.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2cRGefezQLBWTTQWZgAUdjFBznL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/victor/Documents/messenger/public/images&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/victor/Documents/messenger/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/app/conversations/components" />
+      <recent name="$PROJECT_DIR$/app/conversations/[conversationId]/components" />
+      <recent name="$PROJECT_DIR$/app/components/modals" />
+      <recent name="$PROJECT_DIR$/app/actions" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages/api/pusher" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/public/images" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="20e4f849-9213-40bd-8b44-c23d7e406010" name="Changes" comment="" />
+      <created>1708067074038</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708067074038</updated>
+      <workItem from="1708067075032" duration="15088000" />
+      <workItem from="1708094226478" duration="9369000" />
+      <workItem from="1708336986467" duration="112663000" />
+      <workItem from="1709126273145" duration="2442000" />
+      <workItem from="1709276978805" duration="8711000" />
+      <workItem from="1709542101850" duration="367000" />
+      <workItem from="1709549647003" duration="118000" />
+      <workItem from="1709550459874" duration="6000" />
+      <workItem from="1709550490716" duration="50000" />
+      <workItem from="1709726983659" duration="208000" />
+      <workItem from="1709814178102" duration="451000" />
+      <workItem from="1710230963226" duration="282000" />
+      <workItem from="1710341499971" duration="364000" />
+      <workItem from="1710341870326" duration="2225000" />
+    </task>
+    <task id="LOCAL-00001" summary="add authForm">
+      <option name="closed" value="true" />
+      <created>1708091101919</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708091101919</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add schema model">
+      <option name="closed" value="true" />
+      <created>1708355026160</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708355026160</updated>
+    </task>
+    <task id="LOCAL-00003" summary="connect to db mongodb">
+      <option name="closed" value="true" />
+      <created>1708440893580</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708440893580</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add auth github">
+      <option name="closed" value="true" />
+      <created>1708526649939</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708526649939</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add sidebar">
+      <option name="closed" value="true" />
+      <created>1708614082951</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1708614082951</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add sidebar and conversation">
+      <option name="closed" value="true" />
+      <created>1708696017017</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708696017017</updated>
+    </task>
+    <task id="LOCAL-00007" summary="message block">
+      <option name="closed" value="true" />
+      <created>1708959617219</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1708959617219</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add logic conversation">
+      <option name="closed" value="true" />
+      <created>1709045866328</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709045866328</updated>
+    </task>
+    <task id="LOCAL-00009" summary="finish project">
+      <option name="closed" value="true" />
+      <created>1709106869742</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709106869743</updated>
+    </task>
+    <task id="LOCAL-00010" summary="last update">
+      <option name="closed" value="true" />
+      <created>1709115632649</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1709115632649</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fixed next.config">
+      <option name="closed" value="true" />
+      <created>1709119999180</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1709119999180</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fixed next.config.mjs">
+      <option name="closed" value="true" />
+      <created>1709120327176</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1709120327177</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fixed readme">
+      <option name="closed" value="true" />
+      <created>1710341629099</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1710341629099</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fixed readme second">
+      <option name="closed" value="true" />
+      <created>1710341793066</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1710341793066</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="add authForm" />
+    <MESSAGE value="add schema model" />
+    <MESSAGE value="connect to db mongodb" />
+    <MESSAGE value="add auth github" />
+    <MESSAGE value="add sidebar" />
+    <MESSAGE value="add sidebar and conversation" />
+    <MESSAGE value="message block" />
+    <MESSAGE value="add logic conversation" />
+    <MESSAGE value="finish project" />
+    <MESSAGE value="last update" />
+    <MESSAGE value="fixed next.config" />
+    <MESSAGE value="fixed next.config.mjs" />
+    <MESSAGE value="fixed readme" />
+    <MESSAGE value="fixed readme second" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed readme second" />
+  </component>
+</project>
