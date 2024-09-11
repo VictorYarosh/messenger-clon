@@ -51,9 +51,13 @@ const Form = () => {
         w-full
       "
     >
-      <CldUploadButton options={{ maxFiles: 1 }} onUpload={handleUpload} uploadPreset="lgveacix">
-        <HiPhoto size={30} className="text-sky-500" />
-      </CldUploadButton>
+      <div>
+        <CldUploadButton options={{ maxFiles: 1 }} onUpload={handleUpload} uploadPreset="lgveacix">
+          <div className="cursor-pointer">
+            <HiPhoto size={30} className="text-sky-500" />
+          </div>
+        </CldUploadButton>
+      </div>
       <form onSubmit={handleSubmit(onSubmit)} className="flex items-center gap-2 lg:gap-4 w-full">
         <MessageInput id="message" register={register} errors={errors} required placeholder="Write a message" />
         <button

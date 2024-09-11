@@ -4,18 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20e4f849-9213-40bd-8b44-c23d7e406010" name="Changes" comment="" />
+    <list default="true" id="20e4f849-9213-40bd-8b44-c23d7e406010" name="Changes" comment="fixed">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(site)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(site)/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/conversations/[conversationId]/components/Form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/conversations/[conversationId]/components/Form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/conversations/[conversationId]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/conversations/[conversationId]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/conversations/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/conversations/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FormatOnSaveOptions">
-    <option name="myRunOnSave" value="false" />
-    <option name="myAllFileTypesSelected" value="true" />
-    <option name="mySelectedFileTypes">
-      <set />
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,14 +29,12 @@
     &quot;assignee&quot;: &quot;VictorYarosh&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="915ffff1-75bd-4c60-aa98-fb31b5d22bd1" />
-        <option name="url" value="git@github.com:VictorYarosh/messenger-clon.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:VictorYarosh/messenger-clon.git&quot;,
+    &quot;accountId&quot;: &quot;915ffff1-75bd-4c60-aa98-fb31b5d22bd1&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -65,7 +66,7 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/victor/Documents/messenger/node_modules/prettier&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/victor/Documents/messenger/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -82,6 +83,13 @@
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/public/images" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.18034.50" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -105,6 +113,19 @@
       <workItem from="1710230963226" duration="282000" />
       <workItem from="1710341499971" duration="364000" />
       <workItem from="1710341870326" duration="2225000" />
+      <workItem from="1710486715217" duration="153000" />
+      <workItem from="1710833624860" duration="735000" />
+      <workItem from="1711631259907" duration="76000" />
+      <workItem from="1711631368128" duration="46000" />
+      <workItem from="1712220787515" duration="26000" />
+      <workItem from="1712576300307" duration="9000" />
+      <workItem from="1724226040770" duration="4831000" />
+      <workItem from="1725368724093" duration="4328000" />
+      <workItem from="1725429912592" duration="87000" />
+      <workItem from="1725430007908" duration="1490000" />
+      <workItem from="1725435037050" duration="401000" />
+      <workItem from="1725876218864" duration="2682000" />
+      <workItem from="1725879347223" duration="9741000" />
     </task>
     <task id="LOCAL-00001" summary="add authForm">
       <option name="closed" value="true" />
@@ -218,7 +239,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710341793066</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fixed">
+      <option name="closed" value="true" />
+      <created>1710428329026</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1710428329026</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +269,7 @@
     <MESSAGE value="fixed next.config.mjs" />
     <MESSAGE value="fixed readme" />
     <MESSAGE value="fixed readme second" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed readme second" />
+    <MESSAGE value="fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed" />
   </component>
 </project>
