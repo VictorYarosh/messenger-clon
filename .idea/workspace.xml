@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20e4f849-9213-40bd-8b44-c23d7e406010" name="Changes" comment="fixed">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="20e4f849-9213-40bd-8b44-c23d7e406010" name="Changes" comment="fixed error">
+      <change afterPath="$PROJECT_DIR$/app/api/auth/[...nextauth]/auth.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(site)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(site)/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/conversations/[conversationId]/components/Form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/conversations/[conversationId]/components/Form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/conversations/[conversationId]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/conversations/[conversationId]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/conversations/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/conversations/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/actions/getSession.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/actions/getSession.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/auth/[...nextauth]/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/auth/[...nextauth]/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/settings/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/settings/route.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
@@ -125,7 +124,10 @@
       <workItem from="1725430007908" duration="1490000" />
       <workItem from="1725435037050" duration="401000" />
       <workItem from="1725876218864" duration="2682000" />
-      <workItem from="1725879347223" duration="9741000" />
+      <workItem from="1725879347223" duration="12417000" />
+      <workItem from="1726041189313" duration="174000" />
+      <workItem from="1726041372719" duration="1587000" />
+      <workItem from="1726043163059" duration="1180000" />
     </task>
     <task id="LOCAL-00001" summary="add authForm">
       <option name="closed" value="true" />
@@ -247,11 +249,29 @@
       <option name="project" value="LOCAL" />
       <updated>1710428329026</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fixed error">
+      <option name="closed" value="true" />
+      <created>1726038617975</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1726038617976</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="javascript:npm:react" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:prettier" />
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:tailwindcss" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:prisma" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:next" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:postcss" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -270,6 +290,7 @@
     <MESSAGE value="fixed readme" />
     <MESSAGE value="fixed readme second" />
     <MESSAGE value="fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed" />
+    <MESSAGE value="fixed error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed error" />
   </component>
 </project>

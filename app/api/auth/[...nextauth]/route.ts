@@ -1,62 +1,28 @@
-import bcrypt from 'bcrypt';
-import NextAuth, { AuthOptions } from 'next-auth';
-import CredentialsProvider from 'next-auth/providers/credentials';
-import GithubProvider from 'next-auth/providers/github';
-import GoogleProvider from 'next-auth/providers/google';
+import { NextRequest, NextResponse } from 'next/server';
+import NextAuth from 'next-auth';
 
-import { PrismaAdapter } from '@next-auth/prisma-adapter';
+import { authOptions } from './auth';
 
-import prisma from '../../../libs/prismadb';
+// Create a function to handle NextAuth with the appropriate types
+async function handleNextAuth(req: NextRequest) {
+  const { method } = req;
 
-export const authOptions: AuthOptions = {
-  adapter: PrismaAdapter(prisma),
-  providers: [
-    GithubProvider({
-      clientId: process.env.GITHUB_ID as string,
-      clientSecret: process.env.GITHUB_SECRET as string,
-    }),
-    GoogleProvider({
-      clientId: process.env.GOOGLE_CLIENT_ID as string,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
-    }),
-    CredentialsProvider({
-      name: 'credentials',
-      credentials: {
-        email: { label: 'email', type: 'text' },
-        password: { label: 'password', type: 'password' },
-      },
-      async authorize(credentials) {
-        if (!credentials?.email || !credentials?.password) {
-          throw new Error('Invalid credentials');
-        }
+  // Convert NextRequest to NextApiRequest and NextResponse to NextApiResponse
+  // Note: This is a simplified approach; you may need to adapt this based on your needs
+  const res = NextResponse.next();
 
-        const user = await prisma.user.findUnique({
-          where: {
-            email: credentials.email,
-          },
-        });
+  if (method === 'GET' || method === 'POST') {
+    return NextAuth(req as any, res as any, authOptions); // Casting to any to bypass TypeScript errors
+  }
 
-        if (!user || !user?.hashedPassword) {
-          throw new Error('Invalid credentials');
-        }
+  return new NextResponse('Method Not Allowed', { status: 405 });
+}
 
-        const isCorrectPassword = await bcrypt.compare(credentials.password, user.hashedPassword);
+// Export GET and POST handlers
+export async function GET(req: NextRequest) {
+  return handleNextAuth(req);
+}
 
-        if (!isCorrectPassword) {
-          throw new Error('Invalid credentials');
-        }
-
-        return user;
-      },
-    }),
-  ],
-  debug: process.env.NODE_ENV === 'development',
-  session: {
-    strategy: 'jwt',
-  },
-  secret: process.env.NEXTAUTH_SECRET,
-};
-
-const handler = NextAuth(authOptions);
-
-export { handler as GET, handler as POST };
+export async function POST(req: NextRequest) {
+  return handleNextAuth(req);
+}
